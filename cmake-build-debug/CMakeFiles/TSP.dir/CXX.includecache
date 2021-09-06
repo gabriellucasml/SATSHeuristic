@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Files/UFRN/EPOIP/TSP/TSPData.cpp
+cmath
+-
+fstream
+-
+sstream
+-
+vector
+-
+tuple
+-
+TSPData.h
+D:/Files/UFRN/EPOIP/TSP/TSPData.h
+
+D:/Files/UFRN/EPOIP/TSP/TSPData.h
+iostream
+-
+vector
+-
+tuple
+-
+
