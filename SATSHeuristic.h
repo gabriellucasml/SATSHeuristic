@@ -7,16 +7,27 @@
 
 
 #include <vector>
+#include <cstdlib>
+#include <ctime>
+#include <random>
 #include "TSPData.h"
 
 class SATSHeuristic {
 private:
+
     TSPData tspdata;
     std::vector<int> tour;
-    int solution;
+    int solution{};
+
 public:
 
-    int solve();
+    int solve(std::vector<int>solStart, double tStart, double tEnd, double tCool, int numCandidates, int tabuLen, double epochLen);
+
+    static std::vector<std::vector<int>> generate2opNeighborhood(const std::vector<int>& sol, int numNeighbors);
+
+    std::vector<int> nnHeuristic();
+
+    std::vector<int> randomSolution();
 
     int eval(std::vector<int> sol);
 
@@ -31,6 +42,10 @@ public:
     [[nodiscard]] int getSolution() const;
 
     void setSolution(int solution);
+
+    SATSHeuristic(TSPData _tspdata, TSPData tspdata);
+
+    [[maybe_unused]] SATSHeuristic(TSPData tspdata);
 };
 
 

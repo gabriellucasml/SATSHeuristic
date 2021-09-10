@@ -6,16 +6,14 @@
 
 #IncludeRegexTransform: 
 
-D:/Files/UFRN/EPOIP/TSP/TSPData.cpp
-cmath
--
-fstream
--
-sstream
--
+D:/Files/UFRN/EPOIP/TSP/SATSHeuristic.h
 vector
 -
-tuple
+cstdlib
+-
+ctime
+-
+random
 -
 TSPData.h
 D:/Files/UFRN/EPOIP/TSP/TSPData.h
@@ -27,4 +25,12 @@ vector
 -
 tuple
 -
+
+D:/Files/UFRN/EPOIP/TSP/main.cpp
+sstream
+-
+TSPData.h
+D:/Files/UFRN/EPOIP/TSP/TSPData.h
+SATSHeuristic.h
+D:/Files/UFRN/EPOIP/TSP/SATSHeuristic.h
 
